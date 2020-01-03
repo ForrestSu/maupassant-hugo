@@ -100,7 +100,6 @@ mark {
 pre {
     font-family:Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
     overflow:auto;
-    border: 1px solid #ddd;
     display: block;
     margin: 0px;
 }
@@ -366,7 +365,7 @@ textarea {
     overflow: hidden;
 }
 .post-content pre{
-    padding: 1em;
+    padding: 1em 0 1em 1em;
 }
 .post-content code{
     display:inline;
