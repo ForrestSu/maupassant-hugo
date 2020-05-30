@@ -403,8 +403,8 @@ textarea {
     border-radius: 3px;
     margin:0.5em 0;
 }
-.post-content ul li{
-    text-indent: .5em;
+.post-content ul li {
+    text-indent: .1em;
 }
 .archive-title {
     padding-top:20px;
