@@ -994,17 +994,28 @@ img.alignright {
 /** adapt ios dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-      background-color: #444;
+      background-color: #22272d;
       color: #e4e4e4;
     }
+    /** 顶部表格线 */
+    #header .col-group {
+        border-bottom: 3px solid #373e47;
+    }
+    #nav-menu a.current {
+        border:0px;
+        border-bottom:3px solid #ec775c;
+    }
     a {
-      color: #e39777;
+      color: #4d91f7;
     }
     img {
       filter: grayscale(30%);
     }
     .post-content {
         color: #e4e4e4;
+    }
+    .post-content h3, .post-content h2{
+        border-bottom: 2px solid #373e47;
     }
     #logo {
         color: #e4e4e4;
@@ -1013,13 +1024,21 @@ img.alignright {
         color: #e4e4e4;
     }
     .readmore a {
-        color: #e4e4e4;
+        color: #fff;
+        background-color: #57ab5a;
     }
     .post-title {
         color: #e4e4e4;
     }
     .post-title a {
         color: #e4e4e4;
+    }
+    table tr {
+        border-top-color: #2d333b;
+        background-color: #2d333b;
+    }
+    table tr th, table tr td {
+        border-color: #2d333b;
     }
 }
 
