@@ -981,66 +981,58 @@ img.alignright {
     font-size: 14px;
     color: #444;
     margin: -10px 0;
-    padding: 5px 10px;
+    padding: 5px 16px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    float: right; 
+    border-radius: 6px;
+    float: right;
+    font-weight: 500;
 }
 .readmore a:hover {
     background: #F8F8F8;
-    border-bottom-color: #D26911; 
+    border-bottom-color: #D26911;
 }
 
-/** adapt ios dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-      background-color: #22272d;
-      color: #e4e4e4;
-    }
-    /** 顶部表格线 */
-    #header .col-group {
-        border-bottom: 3px solid #373e47;
-    }
-    #nav-menu a.current {
-        border:0px;
-        border-bottom:3px solid #ec775c;
-    }
-    a {
-      color: #4d91f7;
-    }
-    img {
-      filter: grayscale(30%);
-    }
-    .post-content {
-        color: #e4e4e4;
-    }
-    .post-content h3, .post-content h2{
-        border-bottom: 2px solid #373e47;
-    }
-    #logo {
-        color: #e4e4e4;
-    }
-    #nav-menu a {
-        color: #e4e4e4;
-    }
-    .readmore a {
-        color: #fff;
-        background-color: #57ab5a;
-    }
-    .post-title {
-        color: #e4e4e4;
-    }
-    .post-title a {
-        color: #e4e4e4;
-    }
-    table tr {
-        border-top-color: #2d333b;
-        background-color: #2d333b;
-    }
-    table tr th, table tr td {
-        border-color: #2d333b;
-    }
+/** 目录样式 */
+.post-toc {
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    margin: 1.1em 0 0 2em;
+    padding: 0.7em 0.7em 0 0.7em;
+    max-width: 40%;
+    line-height: 1em;
+    float: right;
 }
+.post-toc .post-toc-title {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+.post-toc .post-toc-content {
+    font-size: 15px;
+}
+.post-toc .post-toc-content>nav>ul {
+    margin: 10px 0;
+}
+.post-toc .post-toc-content ul {
+    padding-left: 20px;
+    list-style: square;
+    margin: 0.5em;
+    line-height: 1.8em;
+}
+.post-toc .post-toc-content ul ul {
+    padding-left: 15px;
+    display: none;
+}
+/*@media print,
+screen and (max-width:1057px) {
+    .post-toc {
+        display: none;
+    }
+}*/
+/** end 目录样式 */
 
 /* 版权声明 */
 .post-copyright {
@@ -1168,4 +1160,73 @@ table tbody tr td:nth-of-type(1) pre {
 .github-badge .bg-lightgrey,.github-badge .bg-lightgray {
   background-color: #9f9f9f !important; 
 }
-  
+
+/** adapt ios dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+      background-color: #22272d;
+      color: #e4e4e4;
+    }
+    /** 顶部表格线 */
+    #header .col-group {
+        border-bottom: 3px solid #373e47;
+    }
+    /** 侧边竖线 */
+    #secondary {
+        border-left:1px solid #373e47;
+    }
+    #nav-menu a.current {
+        border:0px;
+        border-bottom:3px solid #ec775c;
+    }
+    a {
+      color: #4d91f7;
+    }
+    img {
+      filter: grayscale(30%);
+    }
+    .post-content {
+        color: #e4e4e4;
+    }
+    .post-content h3, .post-content h2{
+        border-bottom: 2px solid #373e47;
+    }
+    #logo {
+        color: #e4e4e4;
+    }
+    #nav-menu a {
+        color: #e4e4e4;
+    }
+    .readmore a {
+        color: #fff;
+        border-color: #57ab5a;
+        background-color: #57ab5a;
+    }
+    .readmore a:hover {
+        background: #5cc963;
+        border-bottom-color: #5cc963;
+    }
+    .post-toc {
+        border-color: #373e47;
+    }
+    .post-title {
+        color: #e4e4e4;
+    }
+    .post-title a {
+        color: #e4e4e4;
+    }
+    /** 表格样式 */
+    table tr th {
+        background-color: #3b424d;
+    }
+    table tr:nth-child(2n) {
+        background: #3b424d;
+    }
+    table tr {
+        border-top: #2d333b;
+        background-color: #2d333b;
+    }
+    table tr th, table tr td {
+        border-color: #3e4752;
+    }
+}
