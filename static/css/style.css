@@ -102,10 +102,15 @@ pre {
     overflow:auto;
     display: block;
     margin: 0px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-wrap: wrap;
 }
 code {
     display: inline-block;
+    text-wrap: wrap;
 }
+
 blockquote {
     display: block;
     margin-block-start: 1em;
