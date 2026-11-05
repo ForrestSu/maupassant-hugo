@@ -1188,7 +1188,9 @@ table tbody tr td:nth-of-type(1) pre {
         color: #adbac7;
     }
     .post-content h1, .post-content h2, .post-content h3,
-    .post-content h4, .post-content h5, .post-content h6,
+    .post-content h4, .post-content h5, .post-content h6 {
+        color: #e4e4e4;
+    }
     .post-content strong, .post-content b {
         color: #cdd9e5;
     }
