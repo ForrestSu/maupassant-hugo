@@ -113,26 +113,19 @@ code {
 
 blockquote {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 10px;
-    margin-inline-end: 40px;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 5px 0;
-    padding: 15px 5px 5px 20px;
-    color: #000;
-    border-left: none;
-    background-color: #edf6ff;
+    margin: 1em 0;
+    padding: 2px 0 2px 16px;
+    color: #9ca3af;
+    border-left: 4px solid #4b5563;
+    background-color: transparent;
 }
-blockquote::before{
-    display: block;
-    font-family: Helvetica, sans-serif, Arial;
-    font-style: normal;
-    color: #444;
-    font-weight: bold;
-    position: absolute; 
-    background-color: #edf6ff;
+
+.post-content blockquote p {
+    margin: 0 0 0.5em;
+}
+.post-content blockquote p:last-child {
+    margin-bottom: 0;
 }
   
 /**
@@ -385,9 +378,10 @@ textarea {
     margin: auto 3px;
     padding-left: 3px;
     padding-right: 3px;
-    background-color: pink;
+    background-color: #4b4a4a;
     border-radius: 3px;
-    color: #111;
+    color: #fffefe;
+    font-weight: 500;
 }
 .post-content p {
     margin:0 0 1.1em;
@@ -1191,7 +1185,12 @@ table tbody tr td:nth-of-type(1) pre {
       filter: grayscale(30%);
     }
     .post-content {
-        color: #e4e4e4;
+        color: #adbac7;
+    }
+    .post-content h1, .post-content h2, .post-content h3,
+    .post-content h4, .post-content h5, .post-content h6,
+    .post-content strong, .post-content b {
+        color: #cdd9e5;
     }
     .post-content h3, .post-content h2{
         border-bottom: 2px solid #373e47;
